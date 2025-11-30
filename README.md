@@ -14,18 +14,18 @@ A simple SMS spam classifier that detects whether an SMS is **spam** or **ham** 
 ## Folder structure
 \\\
 sms-spam-classifier/
-├── app/                       # Streamlit app
-│   └── streamlit_app.py
+├── app/
+│ └── streamlit_app.py
 ├── data/
-│   └── spam.csv               # dataset used for training
+│ └── spam.csv
 ├── models/
-│   ├── model.joblib           # trained model (optional)
-│   └── vectorizer.joblib
+│ ├── model.joblib
+│ └── vectorizer.joblib
 ├── src/
-│   ├── preprocess.py
-│   ├── train.py
-│   └── predict.py
-├── scripts/                   # helper scripts (optional)
+│ ├── preprocess.py
+│ ├── train.py
+│ └── predict.py
+├── scripts/
 ├── requirements.txt
 └── README.md
 \\\
