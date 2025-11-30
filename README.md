@@ -32,7 +32,7 @@ sms-spam-classifier/
 
 ## Setup (local)
 1. Create & activate virtual environment:
-```
+```bash
 python -m venv venv
 # Windows:
 .\venv\Scripts\activate
@@ -41,17 +41,17 @@ source venv/bin/activate
 ```
 
 2. Install dependencies:
-```
+```bash
 pip install -r requirements.txt
 ```
 
 3. Train the model (creates \models/model.joblib\ and \models/vectorizer.joblib\):
-```
+```bash
 python src/train.py
 ```
 
 4. Run the web app:
-```
+```bash
 streamlit run app/streamlit_app.py
 ```
 
