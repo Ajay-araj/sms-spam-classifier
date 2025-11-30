@@ -7,6 +7,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 from src.preprocess import clean_text
+import matplotlib.pyplot as plt
 
 # Page config
 st.set_page_config(page_title="SMS Spam Classifier — Improved UI", layout="centered")
@@ -139,7 +140,6 @@ if os.path.exists(default_path):
         df = pd.read_csv(default_path, encoding="latin-1", header=0, engine="python", usecols=[0,1])
         if df.shape[1] > 1:
             df.columns = ["label", "text"]
-        st.write(f"Loaded dataset: `{default_path}` — rows: {len(df)}")
         if st.button("Show dataset sample"):
             st.dataframe(df.sample(min(10, len(df))).reset_index(drop=True))
         st.subheader("Class distribution")
