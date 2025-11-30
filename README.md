@@ -32,7 +32,7 @@ sms-spam-classifier/
 
 ## Setup (local)
 1. Create & activate virtual environment:
-\\\ash
+\\\
 python -m venv venv
 # Windows:
 .\venv\Scripts\activate
@@ -41,17 +41,17 @@ source venv/bin/activate
 \\\
 
 2. Install dependencies:
-\\\ash
+\\\
 pip install -r requirements.txt
 \\\
 
 3. Train the model (creates \models/model.joblib\ and \models/vectorizer.joblib\):
-\\\ash
+\\\\
 python src/train.py
 \\\
 
 4. Run the web app:
-\\\ash
+\\\
 streamlit run app/streamlit_app.py
 \\\
 
@@ -60,8 +60,11 @@ streamlit run app/streamlit_app.py
 - Type a message and press **Predict** to get label + confidence.
 
 ## Notes on deployment
-- If you keep \models/\ in \.gitignore\, you must either push trained models manually or retrain within the deployment environment.
-- For Streamlit Cloud / HuggingFace Spaces: ensure \equirements.txt\ exists and \pp/streamlit_app.py\ is set as the main file.
+- Ensure `requirements.txt` is present
+- Make sure the app entry file is: `app/streamlit_app.py`
+- If models are ignored in `.gitignore`, upload `models/` manually to deployment platform
+
+---
 
 ## Author
 AJAYA RAJ A N  
