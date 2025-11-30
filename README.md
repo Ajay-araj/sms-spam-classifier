@@ -12,7 +12,7 @@ A simple SMS spam classifier that detects whether an SMS is **spam** or **ham** 
 - Streamlit web app for interactive testing and dataset preview
 
 ## Folder structure
-\\\
+```  
 sms-spam-classifier/
 ├── app/
 │ └── streamlit_app.py
@@ -28,32 +28,32 @@ sms-spam-classifier/
 ├── scripts/
 ├── requirements.txt
 └── README.md
-\\\
+```
 
 ## Setup (local)
 1. Create & activate virtual environment:
-\\\
+```
 python -m venv venv
 # Windows:
 .\venv\Scripts\activate
 # macOS / Linux:
 source venv/bin/activate
-\\\
+```
 
 2. Install dependencies:
-\\\
+```
 pip install -r requirements.txt
-\\\
+```
 
 3. Train the model (creates \models/model.joblib\ and \models/vectorizer.joblib\):
-\\\\
+```
 python src/train.py
-\\\
+```
 
 4. Run the web app:
-\\\
+```
 streamlit run app/streamlit_app.py
-\\\
+```
 
 ## Usage
 - Open the Streamlit URL printed in the terminal (usually \http://localhost:8501\).
