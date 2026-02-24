@@ -3,7 +3,7 @@
 **Project:** SMS Spam Classifier — TF-IDF + Multinomial Naive Bayes  
 **Author:** AJAYA RAJ A N  
 **Live demo:** (Add your Streamlit Cloud / HuggingFace link here after deployment)
-
+**Link :** https://sms-spam-classifier-my-1st-project.streamlit.app/
 ## Summary
 A simple SMS spam classifier that detects whether an SMS is **spam** or **ham** (not spam). The project includes:
 - Data preprocessing (cleaning, stopwords, stemming)
