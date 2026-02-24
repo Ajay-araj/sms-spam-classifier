@@ -56,7 +56,7 @@ streamlit run app/streamlit_app.py
 ```
 
 ## Usage
-- Open the Streamlit URL printed in the terminal (usually \http://localhost:8501\).
+- Open the Streamlit URL printed in the terminal (http://localhost:8501\](https://sms-spam-classifier-my-1st-project.streamlit.app/).
 - Type a message and press **Predict** to get label + confidence.
 
 ## Notes on deployment
